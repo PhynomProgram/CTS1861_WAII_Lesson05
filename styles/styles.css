@@ -1,8 +1,19 @@
+ :root {
+    --header-font-color: white;
+    --heading-font-color: rgb(41, 41, 59);
+    --paragraph-font-color: darkgreen;
+    --navigation-font-color: rgb(88, 87, 87);
+    --callout-font-color: rgb(43, 62, 44);
+    --border-line-color: #979696;
+    --button-font-color: white;
+    --button-color: rgb(43, 62, 44);
+ }
+ 
  body {
       margin: 0;
       padding: 0;
       background: #ffffff;
-      color: #cfcfcf;              
+      color: #adabab;              
       font-family: "Comic Sans MS", "Papyrus", cursive; 
       font-size: 12px;             
       line-height: 1.0;            
@@ -11,8 +22,8 @@
 
     header {
       padding: 10px 6px;
-      background: #f9f9f9;
-      border-bottom: 1px dotted #e5e5e5;
+      background: #edebeb;
+      border-bottom: 2px solid #979696;
     }
 
     .logo {
@@ -20,7 +31,7 @@
       font-size: 34px;
       letter-spacing: 10px;        
       text-transform: uppercase;   
-      color: #d7d7d7;              
+      color: var(--heading-font-color);              
       margin: 0;
       text-decoration: underline wavy; 
     }
@@ -32,7 +43,7 @@
       letter-spacing: 3px;
     }
     nav a {
-      color: #d0d0d0;
+      color: var(--navigation-font-color);
       text-decoration: underline;
       margin: 0 2px;
     }
@@ -49,7 +60,7 @@
       font-size: 22px;
       font-weight: 400;
       margin: 14px 0 6px;
-      color: #d3d3d3;
+      color: var(--heading-font-color);
       letter-spacing: 6px;
       text-transform: uppercase;
     }
@@ -57,7 +68,7 @@
       font-family: "Times New Roman", Times, serif; 
       font-size: 28px;            
       margin: 8px 0;
-      color: #cfcfcf;
+      color: var(--heading-font-color);
       text-decoration: underline;
     }
     h3 {
@@ -75,14 +86,14 @@
       margin: 6px 0;
       text-transform: uppercase;   
       letter-spacing: 1.2px;       
-      color: #d2d2d2;
+      color: var(--paragraph-font-color);
     }
 
     .callout {
       font-family: "Chiller", "Comic Sans MS", fantasy; 
       font-size: 20px;
       margin: 16px 0;
-      color: #dadada;
+      color: var(--callout-font-color);
     }
 
     ul {
@@ -92,7 +103,7 @@
       font-family: "Times New Roman", Times, serif;
       font-size: 10px;
       line-height: 1.0;
-      color: #d0d0d0;
+      color: var(--paragraph-font-color);
     }
 
     footer {
@@ -101,16 +112,16 @@
       background: #ffffff;
       font-family: "Courier New", Courier, monospace;
       font-size: 10px;
-      color: #d6d6d6;
-      border-top: 1px dashed #ededed;
+      color: var(--paragraph-font-color);
+      border-top: 1px dashed var(--border-line-color);
     }
 
     .btn {
       display: inline-block;
       margin-top: 10px;
       padding: 6px 10px;
-      background: #f6f6f6;
-      color: #d3d3d3;
+      background: var(--button-color);
+      color: var(--button-font-color);
       border: 1px solid #efefef;
       font-family: "Brush Script MT", cursive;
       font-size: 18px;
